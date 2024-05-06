@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+}
+
+.flex {
+  display: flex;
+
+  &.column {
+    flex-flow: column;
+
+    &.wrap {
+      flex-flow: column wrap;
+    }
+  }
+
+  &.wrap {
+    flex-flow: row wrap;
+  }
+}
+
+.cabecalho {
+  background-color: #000000;
+  color: white;
+  justify-content: space-around;
+  padding: 24px 0;
+
+  & .img {
+    width: 100px;
+    height: 100px;
+    margin: 20px 50px;
+    padding: 18px 40px;
+  }
+
+  & .lista {
+    gap: 16px;
+    padding: 16px 0;
+    font-size: 24px;
+    list-style: none;
+
+    & .item {
+      &:hover {
+        color: aquamarine;
+      }
+    }
+  }
+}
+
+main {
+  & .corinthians {
+    background-image: linear-gradient(#000000, #000000);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0;
+
+    & .cassio {
+      width: 25%;
+      margin-left: 10%;
+      border-radius: 50%;
+    }
+
+    & .container {
+      width: 35%;
+
+      & .title {
+        padding: 24px 0;
+        color: #e60000;
+        font-size: 40px;
+      }
+    }
+  }
+
+  & .jogador {
+    padding: 20px;
+
+    & .title {
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    & .jogadores {
+      display: grid;
+      grid-auto-flow: column wrap;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      gap: 50px;
+
+      & .container {
+        text-align: center;
+
+        & .imagem {
+          width: 120px;
+          height: 120px;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
