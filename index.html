@@ -1,82 +1,283 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto 2º ano</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="cabecalho flex">
-      <img class="img" src="img/corinthians.png" alt="logo da alura start" />
-      <ul class="lista flex">
-        <li class="item">Jogadores</li>
-        <li class="item">Time</li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto 2º ano</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header flex">
+    <a href="#"><img class="header__bandeira" src="img/corinthians.png" alt="Bandeira do Corinthians"></img></a>
+
+    <nav class="nav">
+      <ul class="list flex">
+        <li><a href="#JogadoresMasculino">Jogadores</a></li>
       </ul>
-    </header>
+    </nav>
+  </header>
 
-    <main>
-      <section class="corinthians">
-        <div class="container">
-          <h2 class="title">Salve o Corinthians</h2>
-        </div>
-        <img class="cassio" src="img/bobcorinthians.jpg" alt="Colegio" />
-      </section>
+  <main>
+    <section class="section hero flex">
+      <h1>Bem-vindo ao site do <span>Timão</span>!</h1>
 
-      <section class="jogador flex column">
-        <h2 class="title">Quem são nossos jogadores?</h2>
-        <div class="jogadores">
-          <div class="container">
-            <img class="imagem" src="img/cassio.png" alt="Cassio" />
-            <h3 class="nome">Cassio</h3>
-          </div>
+      <div class="fundo-branco flex">
+        <img src="img/bobcorinthians.jpg" alt="Bob Esponja e Corinthians">
+      </div>
+    </section>
 
-          <div class="container">
-            <img
-              class="imagem"
-              src="img/carlosmiguel.png"
-              alt="Carlos Miguel"
-            />
-            <h3 class="nome">Carlos Miguel</h3>
-          </div>
+    <section id="JogadoresMasculino" class="section jogadores flex column">
+      <h2 class="jogadores__title">
+        Jogadores do Elenco Masculino
+      </h2>
+      <p class="jogadores__subtitle">Conheça nosso elenco <span id="elencoAdjetivo">fortíssimo</span></p>
 
-          <div class="container">
-            <img class="imagem" src="img/caca.png" alt="Cacá" />
-            <h3 class="nome">Cacá</h3>
-          </div>
+      <div class="jogadores__posicoes flex column">
+        <div class="posicao flex column">
+          <h3>Goleiros</h3>
 
-          <div class="container">
-            <img class="imagem" src="img/felix.png  " alt="Félix Torres" />
-            <h3 class="nome">Félix Torres</h3>
-          </div>
-
-          <div class="container">
-            <img class="imagem" src="img/yuri.png" alt="Yuri Alberto" />
-            <h3 class="nome">Yuri Alberto</h3>
-          </div>
-
-          <div class="container">
-            <img class="imagem" src="img/carlosmiguel.png" alt="Groovador" />
-            <h3 class="nome">Carlos Miguel</h3>
-          </div>
-
-          <div class="container">
-            <img class="imagem" src="img/carlosmiguel.png" alt="Groovador" />
-            <h3 class="nome">Carlos Miguel</h3>
-          </div>
-
-          <div class="container">
-            <img class="imagem" src="img/carlosmiguel.png" alt="Groovador" />
-            <h3 class="nome">Carlos Miguel</h3>
+          <div class="container grid goleiros">
+            <div class="jogador">
+              <img
+                src="https://cdn.meutimao.com.br/_upload/jogador/carlos-miguel-dos-santos-pereira-no-corinthians_2g.jpg"
+                alt="Carlos Miguel">
+              <p>Carlos Miguel</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/cassio-ramos-no-corinthians_1g.jpg" alt="Cassio">
+              <p>Cássio</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/matheus-planelles-donelli-no-corinthians_sg.jpg"
+                alt="Matheus Donelli">
+              <p>Matheus Donelli</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/matheus-roger-costa-silva-no-corinthians_pg.jpg"
+                alt="Matheus Roger">
+              <p>Matheus Roger</p>
+            </div>
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+
+        <div class="posicao flex column">
+          <h3>Laterais-Esquerdos</h3>
+
+          <div class="container grid">
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/diego-jose-palacios-espinoza-no-corinthians_2g.jpg"
+                alt="Diego Palacios">
+              <p>Diego Palacios</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/hugo-ferreira-de-farias-no-corinthians_pg.jpg"
+                alt="Hugo">
+              <p>Hugo</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/matheus-lima-beltrao-oliveira-no-corinthians_rg.jpg"
+                alt="Matheus Bidu">
+              <p>Matheus Bidu</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="posicao flex column">
+          <h3>Laterais-Direitos</h3>
+
+          <div class="container grid">
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/fagner-conserva-lemos-no-corinthians_8g.jpg"
+                alt="Fagner">
+              <p>Fagner</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/matheus-franca-da-silva-no-corinthians_6g.jpg"
+                alt="Matheus França">
+              <p>Matheus França</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="posicao flex column">
+          <h3>Zagueiros</h3>
+
+          <div class="container grid">
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/carlos-de-menezes-junior-no-corinthians_7g.jpg"
+                alt="Cacá">
+              <p>Cacá</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/joao-victor-andrade-caetano-no-corinthians_jg.jpg"
+                alt="Caetano">
+              <p>Caetano</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/felix-eduardo-torres-caicedo-no-corinthians_10g.jpg"
+                alt="Félix Torres">
+              <p>Félix Torres</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/gustavo-henrique-vernes-no-corinthians_zg.jpg"
+                alt="Gustavo">
+              <p>Gustavo</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/joao-pedro-de-sousa-rodrigues-no-corinthians_xg.jpg"
+                alt="Joao Pedro">
+              <p>Joao Pedro</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/raul-gustavo-pereira-bicalho-no-corinthians_5g.jpg"
+                alt="Raul Gustavo">
+              <p>Raul Gustavo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="posicao flex column">
+          <h3>Volantes</h3>
+
+          <div class="container grid">
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/fausto-mariano-vera-no-corinthians_og.jpg"
+                alt="Fausto">
+              <p>Fausto</p>
+            </div>
+            <div class="jogador">
+              <img
+                src="https://cdn.meutimao.com.br/_upload/jogador/gabriel-silva-moscardo-de-salles-no-corinthians_dg.jpg"
+                alt="Gabriel">
+              <p>Gabriel</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/maycon-de-andrade-barberan-no-corinthians_8g.jpg"
+                alt="Maycon">
+              <p>Maycon</p>
+            </div>
+            <div class="jogador">
+              <img
+                src="https://cdn.meutimao.com.br/_upload/jogador/jose-paulo-bezerra-maciel-junior-no-corinthians_lg.jpg"
+                alt="Paulinho">
+              <p>Paulinho</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/raniele-almeida-melo-no-corinthians_gg.jpg"
+                alt="Raniele">
+              <p>Raniele</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/ryan-gustavo-de-lima-no-corinthians_10g.jpg"
+                alt="Ryan">
+              <p>Ryan</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="posicao flex column">
+          <h3>Meias</h3>
+
+          <div class="container grid">
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/guilherme-sucigan-mafra-cunha-no-corinthians_lg.jpg"
+                alt="Biro">
+              <p>Biro</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/breno-de-souza-bidon-no-corinthians_xg.jpg"
+                alt="Breno Bidon">
+              <p>Breno Bidon</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/igor-caique-coronado-no-corinthians_ug.jpg"
+                alt="Igor Coronado">
+              <p>Igor Coronado</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/matheus-de-araujo-andrade-no-corinthians_qg.jpg"
+                alt="Matheus Araujo">
+              <p>Matheus Araújo</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/matias-nicolas-rojas-romero-no-corinthians_lg.jpg"
+                alt="Matías Rojas">
+              <p>Matías Rojas</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/rodrigo-garro-no-corinthians_sg.jpg"
+                alt="Rodrigo Garro">
+              <p>Rodrigo Garro</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="posicao flex column">
+          <h3>Atacantes</h3>
+
+          <div class="container grid">
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/arthur-sousa-araujo-no-corinthians_ng.jpg"
+                alt="Arthur Sousa">
+              <p>Arthur Sousa</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/giovane-santana-do-nascimento-no-corinthians_7g.jpg"
+                alt="Giovane">
+              <p>Giovane</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/gustavo-henric-da-silva-no-corinthians_gg.jpg"
+                alt="Gustavo Silva">
+              <p>Gustavo Silva</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/pedro-henrique-konzen-medina-da-silva-no_dg.jpg"
+                alt="Pedro Henrique">
+              <p>Pedro Henrique</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/pedro-raul-garay-da-silva-no-corinthians_2g.jpg"
+                alt="Pedro Raul">
+              <p>Pedro Raul</p>
+            </div>
+            <div class="jogador">
+              <img
+                src="https://cdn.meutimao.com.br/_upload/jogador/angel-rodrigo-romero-villamayor-no-corinthians_wg.jpg"
+                alt="Romero">
+              <p>Romero</p>
+            </div>
+            <div class="jogador">
+              <img src="https://cdn.meutimao.com.br/_upload/jogador/ruan-de-oliveira-ferreira-no-corinthians_bg.jpg"
+                alt="Ruan Oliveira">
+              <p>Ruan Oliveira</p>
+            </div>
+            <div class="jogador">
+              <img
+                src="https://cdn.meutimao.com.br/_upload/jogador/wesley-gassova-ribeiro-teixeira-no-corinthians_fg.jpg  "
+                alt="Wesley">
+              <p>Wesley</p>
+            </div>
+            <div class="jogador">
+              <img
+                src="https://cdn.meutimao.com.br/_upload/jogador/yuri-alberto-monteiro-da-silva-no-corinthians_cg.jpg"
+                alt="Yuri Alberto">
+              <p>Yuri Alberto</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
